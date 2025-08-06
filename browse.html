@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Browse Books - Online Bookstore</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f5f5f5;
+  }
+  header {
+    background: #3f51b5;
+    color: white;
+    padding: 15px 20px;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #ccc;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .filter {
+    margin-bottom: 25px;
+  }
+  select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid #3f51b5;
+  }
+  ul.book-list {
+    list-style: none;
+    padding: 0;
+  }
+  ul.book-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul.book-list li:last-child {
+    border-bottom: none;
+  }
+  a.details-link {
+    text-decoration: none;
+    color: #3f51b5;
+    font-weight: bold;
+  }
+  a.details-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="browse.html">Browse Books</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Browse Books</h2>
+
+  <div class="filter">
+    <label for="genre-select">Filter by Genre: </label>
+    <select id="genre-select">
+      <option value="all">All</option>
+      <option value="fiction">Fiction</option>
+      <option value="nonfiction">Non-fiction</option>
+      <option value="scifi">Sci-Fi</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="biography">Biography</option>
+    </select>
+  </div>
+
+  <ul class="book-list" id="book-list">
+    <li><span>Sachin Tendulkar-Play by my way</span><a href="details.html?id=1" class="details-link">View Details</a></li>
+    <li><span>Rich Dad , Poor Dad</span><a href="details.html?id=2" class="details-link">View Details</a></li>
+    <li><span>Brief History of Roman Empire</span><a href="details.html?id=3" class="details-link">View Details</a></li>
+    <li><span>Mahabharat</span><a href="details.html?id=4" class="details-link">View Details</a></li>
+    <li><span>Journey to Hell</span><a href="details.html?id=5" class="details-link">View Details</a></li>
+  </ul>
+</div>
+
+
+
+</body>
+</html>
